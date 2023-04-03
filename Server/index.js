@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-const connectionUrl =
-  "mongodb+srv://hamza:pAKISTAN123@memories-app.o9c5h6x.mongodb.net/?retryWrites=true&w=majority";
+const connectionUrl =process.env.DB_Url
+  ;
 const port = process.env.PORT || 5000;
 
 mongoose
