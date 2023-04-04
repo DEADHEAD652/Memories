@@ -14,8 +14,8 @@ app.use(cors());
 app.post('/posts',postRoutes)
 
 
-const connectionUrl =process.env.DB_Url
-  ;
+const connectionUrl = process.env.DB_Url
+  
 const port = process.env.PORT || 5000;
 
 mongoose
