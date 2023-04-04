@@ -5,12 +5,14 @@ import postRoutes from './routes/posts.js'
 
 const app = express();
 
-app.post('/posts',postRoutes)
 
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
+
+app.post('/posts',postRoutes)
+
 
 const connectionUrl =process.env.DB_Url
   ;
